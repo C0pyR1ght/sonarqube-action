@@ -17,7 +17,7 @@ else
 fi
 
 sonar-scanner \
-	-X
+	-X \
 	-Dsonar.host.url=${INPUT_HOST} \
 	-Dsonar.projectKey=${PWD##*/} \
 	-Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
