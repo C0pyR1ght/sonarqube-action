@@ -16,14 +16,7 @@ else
 	SONAR_PASSWORD="${INPUT_PASSWORD}"
 fi
 
-echo ${INPUT_HOST}
-echo ${PWD##*/}
-echo ${INPUT_PROJECTBASEDIR}
-echo ${INPUT_LOGIN}
-echo${INPUT_PASSWORD}
-
 sonar-scanner \
-	-X \
 	-Dsonar.host.url=${INPUT_HOST} \
 	-Dsonar.projectKey=${PWD##*/} \
 	-Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
